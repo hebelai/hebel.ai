@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: hebel
+      POSTGRES_PASSWORD: hebel
+      POSTGRES_DB: hebel
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+volumes:
+  db-data:

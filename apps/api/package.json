@@ -1,0 +1,25 @@
+{
+  "name": "@hebel/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "10.3.10",
+    "@nestjs/core": "10.3.10",
+    "@nestjs/platform-express": "10.3.10",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.1",
+    "pg": "8.11.5",
+    "typeorm": "0.3.17",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.14.1"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5",
+    "ts-node-dev": "2.0.0"
+  }
+}
